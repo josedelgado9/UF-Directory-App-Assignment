@@ -6,3 +6,55 @@
   max-height: 400px;
   overflow: auto;
 }
+
+td>button{
+  background-color: rgb(224, 31, 31);
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 1px 6px;
+  border-radius: 5px;
+}
+
+.input_box input{
+  display: block;
+}
+
+.form-section #button {
+  background-color: green;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 25%;
+}
+
+.pair-info span {
+  font-size: 16px;
+  font-weight: 200;
+}
+.pair-info h3{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 4px;
+}
+
+.jumbotron{
+  background-color: rgb(29, 101, 163);
+  color: white;
+}
+
+img.col-md-6{
+  object-fit: scale-down;
+}
