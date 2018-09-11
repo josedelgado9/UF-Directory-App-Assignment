@@ -10,6 +10,9 @@
   <div class="container">
     <div class="row">
       <h1>UF Directory App</h1>
+      <div class="Logo">
+        <img src="uf-logo.png">
+      </div>
     </div>
     <div class="row" ng-controller="ListingsController">
       <div class="col-md-6">
@@ -35,40 +38,6 @@
             </tr>
           </table>
         </div>
-        <!--  Write an HTML form that adds new listings to the directory -->
-        <div class="form-section">
-          <form name="addNewListingInfo" ng-submit="addListing()">
-            <br>
-            <h2>Add new listing data</h2>
-
-            <label>Code</label>
-            <div class="form-entry">
-              <input ng-model="form.code" type="text" placeholder="Enter code here">
-            </div>
-
-            <div class="form-entry">
-              <label>Name</label>
-              <input ng-model="form.name" type="text" placeholder="Enter name here" required>
-            </div>
-
-            <div class="form-entry">
-              <label>Coordinates:</label>
-              <br>
-              <input ng-model="form.coordinates.latitude" type="text" placeholder="Enter latitude">
-              <input ng-model="form.coordinates.longitude" type="text" placeholder="Enter longitude">
-            </div>
-
-            <div class="form-entry">
-              <label>Address</label>
-              <input ng-model="form.address" type="text" placeholder="Address">
-            </div>
-            <br>
-            <div class="form-entry">
-              <input id="button" type="submit" value="Add data">
-            </div>
-            <br>
-          </form>
-        </div>
       </div>
       <div class="col-md-6">
         <div class="jumbotron">
@@ -78,25 +47,61 @@
                    * consider how to use ng-click within the the table to implement this feature
              -->
           <div class="pair-info">
-            <h3>Code: <span>{{detailedInfo.code}}</span></h3>
-          </div>
-          <div class="pair-info">
-            <h3>Name: <span>{{detailedInfo.name}}</span></h3>
-          </div>
-          <div class="pair-info">
-            <h3>Address:</h3>
+            <h4>Code: <span>{{detailedInfo.code}}</span></h4>
+            <!-- </div> -->
+            <!-- <div class="pair-info"> -->
+            <h4>Name: <span>{{detailedInfo.name}}</span></h4>
+            <!-- </div>
+          <div class="pair-info"> -->
+            <h4>Address:</h4>
             <span>{{detailedInfo.address}}</span>
-          </div>
-          <div class="pair-info">
-            <h3>Coordinates:</h3>
-            <span>Longitude: {{detailedInfo.coordinates.longitude}}</span>
-            <span>Latitude: {{detailedInfo.coordinates.latitude}}</span>
+            <!-- </div>
+          <div class="pair-info"> -->
+            <h4>Coordinates:</h4>
+            <span><strong>Longitude:</strong> {{detailedInfo.coordinates.longitude}}</span><br>
+            <span><strong>Latitude:</strong> {{detailedInfo.coordinates.latitude}}</span>
           </div>
         </div>
-        <img src="uf-logo.png">
       </div>
+      <footer>
+        <div class="form-section">
+          <form name="addNewListingInfo" ng-submit="addListing()">
+            <h2>Add new listing data</h2>
+
+            <label>Code</label>
+            <div class="form-entry">
+              <input ng-model="form.code" type="text" placeholder="Enter code here">
+            </div>
+
+            <label>Name</label>
+            <div class="form-entry">
+              <input ng-model="form.name" type="text" placeholder="Enter name here" required>
+            </div>
+
+            <label>Coordinates:</label>
+            <div class="form-entry">
+              <input ng-model="form.coordinates.latitude" type="text" placeholder="Enter latitude">
+              <input ng-model="form.coordinates.longitude" type="text" placeholder="Enter longitude">
+            </div>
+
+            <label>Address</label>
+            <div class="form-entry">
+              <input ng-model="form.address" type="text" placeholder="Address">
+            </div>
+            <br>
+            <div class="form-entry">
+              <input id="button" type="submit" value="Add data">
+            </div>
+            <br>
+          </form>
+        </div>
+        <div class="gator">
+          <img src="florida-gators-logo-png-transparent.png">
+        </div>
+      </footer>
     </div>
   </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
     crossorigin="anonymous"></script>

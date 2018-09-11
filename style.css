@@ -22,27 +22,28 @@ td>button{
 }
 
 .form-section #button {
-  background-color: green;
+  background-color: rgb(255, 81, 0);
   color: white;
   border: none;
   text-align: center;
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 4px;
-  width: 25%;
+  width: 15%;
 }
 
 .pair-info span {
   font-size: 16px;
   font-weight: 200;
+
 }
-.pair-info h3{
-  font-weight: 500;
+.pair-info h4{
+  font-weight: 600;
   font-size: 20px;
 }
 
 input[type=text]{
-  width: 100%;
+  width: 50%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -51,10 +52,55 @@ input[type=text]{
 }
 
 .jumbotron{
-  background-color: rgb(29, 101, 163);
-  color: white;
+  background-color: rgba(198, 205, 211, 0.541);
+  color: black;
+  position: relative;
+  top: 35px;
 }
 
-img.col-md-6{
-  object-fit: scale-down;
+.Logo img{
+  position: absolute;
+  top: 0px;
+  left: 58%;
+  object-fit: contain;
+  height: 130px;
+}
+
+footer {
+  position: absolute;
+  top: 82%;
+  height: 530px;
+  background-color: rgb(29, 101, 163);
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+label{
+  color: white;
+  font-size: 24px;
+  font-weight: 100;
+}
+footer h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 42px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.row h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 42px;
+  margin-left: 15px;
+}
+.container {
+  width: 100%;
+  padding-left: 15px;
+}
+
+.gator img{
+  position: relative;
+  float: right;
+  height: 300px;
+  bottom: 400px;
+  right: 110px;
 }
